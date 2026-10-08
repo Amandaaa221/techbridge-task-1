@@ -720,3 +720,148 @@ ul {
     padding: 2rem;
   }
 }
+
+
+.text-center {
+  text-align: center;
+}
+
+.center-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-flex {
+  justify-content: center;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 2rem;
+}
+
+.nav-link.active {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.programs-hero {
+  padding: 4rem 0 3rem;
+  background-color: var(--color-card-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.programs-page-section {
+  padding: 4rem 0;
+}
+
+.program-card-data {
+  border-top: 4px solid var(--color-primary);
+}
+
+.program-card-web {
+  border-top: 4px solid var(--color-navy);
+}
+
+.focus-callout {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.925rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.data-callout {
+  background-color: #F0FDF0;
+  border-left: 3px solid var(--color-primary);
+  color: var(--color-text-main);
+}
+
+.web-callout {
+  background-color: #F1F5F9;
+  border-left: 3px solid var(--color-navy);
+  color: var(--color-text-main);
+}
+
+.program-overview {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-block h4 {
+  color: var(--color-navy);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.card-cta {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+/* Comparison Section */
+.comparison-section {
+  padding: 4rem 0;
+  background-color: var(--color-card-bg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table-responsive {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.comparison-table th {
+  background-color: var(--color-bg-light);
+  color: var(--color-navy);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.th-data {
+  color: var(--color-primary-dark);
+  width: 38%;
+}
+
+.th-web {
+  color: var(--color-navy);
+  width: 38%;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: var(--color-bg-light);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.btn-outline-white:hover {
+  background-color: #FFFFFF;
+  color: var(--color-navy);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.8rem;
+    font-size: 0.875rem;
+  }
+}
