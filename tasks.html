@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Roadmap | TechBridge by Baselink Services Limited</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome Vector Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/techbridge-logo.jpeg" alt="TechBridge Logo" class="brand-logo">
+      </a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html#about" class="nav-link">About Us</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="tasks.html" class="nav-link active">Internship Roadmap</a>
+        <a href="index.html#community" class="nav-link">Community</a>
+        <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Header -->
+    <section class="hero tasks-hero">
+      <div class="container text-center">
+        <div class="badge">
+          <i class="fa-solid fa-route"></i>
+          30-Day Practical Internship
+        </div>
+        <h1>Interactive Internship Roadmap</h1>
+        <p class="hero-description center-text">
+          Explore what you will build during your 30-day internship at TechBridge. Select a track below to view the complete 8-task journey, day progression, and difficulty levels.
+        </p>
+      </div>
+    </section>
+
+    <!-- Overview Bar -->
+    <section class="overview-bar">
+      <div class="container">
+        <div class="overview-grid">
+          <div class="overview-item">
+            <i class="fa-solid fa-calendar-check"></i>
+            <div>
+              <span class="overview-value">30 Days</span>
+              <span class="overview-label">Practical Internship</span>
+            </div>
+          </div>
+          <div class="overview-item">
+            <i class="fa-solid fa-list-check"></i>
+            <div>
+              <span class="overview-value">8 Milestones</span>
+              <span class="overview-label">Hands-on Tasks</span>
+            </div>
+          </div>
+          <div class="overview-item">
+            <i class="fa-solid fa-chart-line"></i>
+            <div>
+              <span class="overview-value">Beginner → Intermediate</span>
+              <span class="overview-label">Difficulty Progression</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Track Switcher Section -->
+    <section class="tasks-roadmap-section">
+      <div class="container">
+        
+        <!-- Track Selection Controls -->
+        <div class="track-selection-wrapper">
+          <span class="track-selection-label">Choose Your Track</span>
+          <div class="track-btn-group">
+            <button type="button" class="track-btn active" id="btnDataAnalytics" data-track="data-analytics">
+              <i class="fa-solid fa-chart-pie"></i>
+              Data Analytics
+            </button>
+            <button type="button" class="track-btn" id="btnWebDev" data-track="web-development">
+              <i class="fa-solid fa-code"></i>
+              Web Development
+            </button>
+          </div>
+        </div>
+
+        <!-- Currently Viewing Indicator -->
+        <div class="current-track-status">
+          <span class="status-title">Currently Viewing</span>
+          <h2 class="status-track-name" id="currentTrackDisplay">Data Analytics Track</h2>
+        </div>
+
+        <!-- Dynamic Task Roadmap Timeline Container -->
+        <div class="roadmap-timeline" id="roadmapContainer">
+          <!-- Populated dynamically via JavaScript -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Call to Action -->
+    <section class="internship-section">
+      <div class="container">
+        <div class="internship-card text-center">
+          <span class="internship-badge">Start Your Internship</span>
+          <h2>Ready to Begin Your 30-Day Journey?</h2>
+          <p class="center-text margin-bottom-lg">
+            Join the next TechBridge cohort and turn theoretical knowledge into real, portfolio-ready projects.
+          </p>
+          <div class="hero-actions center-flex">
+            <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+              Apply For Internship <i class="fa-solid fa-paper-plane"></i>
+            </a>
+            <a href="index.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-house"></i> Back to Homepage
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/techbridge-logo.jpeg" alt="TechBridge Logo" class="footer-logo">
+          <p class="tagline">Bridging Learning to Real-World Experience</p>
+          <p class="parent-org">An initiative by <strong>Baselink Services Limited</strong>.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="tasks.html">Internship Roadmap</a></li>
+            <li><a href="index.html#community">Community</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Official Contact</h4>
+          <p class="contact-email">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:techbridgebaslink@gmail.com">techbridgebaslink@gmail.com</a>
+          </p>
+          
+          <h4>Follow TechBridge</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/techbridge-services/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/p/Baselink-Services-100066771475783/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; TechBridge by Baselink Services Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Files -->
+  <script src="script.js"></script>
+</body>
+</html>
