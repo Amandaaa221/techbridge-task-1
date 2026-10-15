@@ -865,3 +865,221 @@ ul {
     font-size: 0.875rem;
   }
 }
+/* ==========================================================================
+   Task 3: Internship Tasks & Roadmap Timeline
+   ========================================================================== */
+
+.tasks-hero {
+  padding: 4rem 0 2.5rem;
+  background-color: var(--color-card-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.overview-bar {
+  background-color: var(--color-navy);
+  color: #FFFFFF;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.overview-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.overview-item i {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+}
+
+.overview-value {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.overview-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #94A3B8;
+}
+
+/* Roadmap List */
+.tasks-roadmap-section {
+  padding: 5rem 0;
+}
+
+.roadmap-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-badge {
+  background-color: var(--color-navy);
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 50px;
+  border: 1px solid var(--color-primary);
+  white-space: nowrap;
+}
+
+.connector-line {
+  width: 3px;
+  height: 100%;
+  min-height: 80px;
+  background-color: var(--color-border);
+  margin-top: 0.5rem;
+}
+
+.task-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(67, 195, 0, 0.4);
+}
+
+.active-card {
+  border-left: 5px solid var(--color-primary);
+  background-color: #FAFCF8;
+}
+
+.final-task-card {
+  border-left: 5px solid var(--color-navy);
+  background-color: #F8FAFC;
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.task-number {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.level-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.level-beginner {
+  background-color: #F0FDF0;
+  color: var(--color-primary-dark);
+}
+
+.level-inter {
+  background-color: #FEF3C7;
+  color: #D97706;
+}
+
+.level-advanced {
+  background-color: #E0F2FE;
+  color: #0369a1;
+}
+
+.task-card h3 {
+  font-size: 1.35rem;
+  color: var(--color-navy);
+  margin-bottom: 0.6rem;
+}
+
+.task-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.status-indicator {
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.status-complete {
+  color: var(--color-primary-dark);
+}
+
+.status-current {
+  color: #D97706;
+}
+
+.status-upcoming {
+  color: #64748B;
+}
+
+@media (max-width: 768px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .connector-line {
+    display: none;
+  }
+
+  .timeline-marker {
+    align-items: flex-start;
+  }
+}
