@@ -1083,3 +1083,112 @@ ul {
     align-items: flex-start;
   }
 }
+/* ==========================================================================
+   Task 4: Interactive Track Selection & Roadmap Enhancements
+   ========================================================================== */
+
+.track-selection-wrapper {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.track-selection-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.8rem;
+}
+
+.track-btn-group {
+  display: inline-flex;
+  background-color: var(--color-bg-light);
+  padding: 0.35rem;
+  border-radius: 50px;
+  border: 1px solid var(--color-border);
+  gap: 0.35rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.track-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.6rem;
+  border: none;
+  background: transparent;
+  color: var(--color-navy);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.track-btn i {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  transition: var(--transition);
+}
+
+.track-btn:hover {
+  color: var(--color-primary-dark);
+}
+
+.track-btn.active {
+  background-color: var(--color-navy);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-sm);
+}
+
+.track-btn.active i {
+  color: var(--color-primary);
+}
+
+/* Currently Viewing Section */
+.current-track-status {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 1.25rem;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.status-title {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.status-track-name {
+  font-size: 1.4rem;
+  color: var(--color-navy);
+  font-weight: 700;
+}
+
+/* Responsive adjustment for track switcher */
+@media (max-width: 576px) {
+  .track-btn-group {
+    flex-direction: column;
+    width: 100%;
+    border-radius: var(--radius-md);
+  }
+
+  .track-btn {
+    width: 100%;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+  }
+}
